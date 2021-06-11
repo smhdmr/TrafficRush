@@ -4,34 +4,66 @@ using UnityEngine;
 
 public class Car : MonoBehaviour
 {
-    public float idleSpeed;
+    public float idleForwardSpeed;
+    public float maxSpeedIncrease;
+    private float forwardSpeed;
+    public float xSpeed;
+    public float speedDecreaseFactor;
 
-    private Rigidbody rb;
-    private GameObject leftWheel, rightWheel;
+    private float speedIncreaseTime;
+    public float maxSpeedIncreaseTime;
+
+    private Rigidbody rb;    
 
 
     void Awake()
     {
-        rb = GetComponent<Rigidbody>();
-        leftWheel = transform.GetChild(3).gameObject;
-        rightWheel = transform.GetChild(0).gameObject;
+        rb = GetComponent<Rigidbody>();        
     }
        
 
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = new Vector3(0f, 0f, idleSpeed);
+        
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            speedIncreaseTime += Time.deltaTime;
+
+            if(speedIncreaseTime > maxSpeedIncreaseTime)            
+                speedIncreaseTime = maxSpeedIncreaseTime;
+
+            forwardSpeed = idleForwardSpeed + (maxSpeedIncrease / maxSpeedIncreaseTime * speedIncreaseTime);
+                        
+            rb.velocity = new Vector3(0f, 0f, forwardSpeed);
+            Debug.Log(forwardSpeed);
+        }
+
+        else
+        {
+            speedIncreaseTime -= Time.deltaTime;
+
+            if (speedIncreaseTime < 0f)
+                speedIncreaseTime = 0f;
+
+            forwardSpeed = idleForwardSpeed + (maxSpeedIncrease * speedIncreaseTime / maxSpeedIncreaseTime / speedDecreaseFactor);
+
+            rb.velocity = new Vector3(0f, 0f, forwardSpeed);
+            Debug.Log(forwardSpeed);
+        }
 
         if (Input.GetKey(KeyCode.A))
         {
-            rb.AddForceAtPosition(new Vector3(-1f, 0f, 0f), rightWheel.transform.position, ForceMode.Force);
+            rb.velocity = new Vector3(-xSpeed, rb.velocity.y, rb.velocity.z);
         }
 
         else if (Input.GetKey(KeyCode.D))
         {
-            rb.AddForceAtPosition(new Vector3(1f, 0f, 0f), rightWheel.transform.position, ForceMode.Force);
+            rb.velocity = new Vector3(xSpeed, rb.velocity.y, rb.velocity.z);
         }
+
+        
 
     }
 }
