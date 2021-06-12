@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 488418}
   - component: {fileID: 3347822}
   - component: {fileID: 2354604}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wheel6-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 429704}
   - component: {fileID: 3373930}
   - component: {fileID: 2393058}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wheel6-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 462650}
   - component: {fileID: 3319842}
   - component: {fileID: 2305242}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wheel6-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +257,7 @@ GameObject:
   - component: {fileID: 438106}
   - component: {fileID: 3378630}
   - component: {fileID: 2380354}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wheel6-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +341,8 @@ GameObject:
   - component: {fileID: 2376108}
   - component: {fileID: -2813746850806048621}
   - component: {fileID: -8143310113596589104}
-  m_Layer: 0
+  - component: {fileID: 1972142694621672258}
+  m_Layer: 3
   m_Name: Car_6_Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -445,3 +446,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b6b5c68f88a2f4c893afbd240ed0aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1972142694621672258
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193646}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.045798227, y: 0.013064211, z: 0.021283582}
+  m_Center: {x: 0, y: -6.9849193e-10, z: 0}

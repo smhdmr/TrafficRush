@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 2319746}
   - component: {fileID: -2677736340094092122}
   - component: {fileID: 8358317892405442128}
-  m_Layer: 0
+  - component: {fileID: 5611875694620685682}
+  m_Layer: 3
   m_Name: Car_1_Yellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,6 +118,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b6b5c68f88a2f4c893afbd240ed0aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5611875694620685682
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116448}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.041918803, y: 0.014048178, z: 0.021649476}
+  m_Center: {x: 0.00043716852, y: 0.0006333061, z: -0.0000000018626456}
 --- !u!1 &139306
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,7 +142,7 @@ GameObject:
   - component: {fileID: 429422}
   - component: {fileID: 3309104}
   - component: {fileID: 2308310}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wheel1-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +224,7 @@ GameObject:
   - component: {fileID: 481162}
   - component: {fileID: 3367302}
   - component: {fileID: 2310866}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wheel1-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +306,7 @@ GameObject:
   - component: {fileID: 419122}
   - component: {fileID: 3397462}
   - component: {fileID: 2309806}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wheel1-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +388,7 @@ GameObject:
   - component: {fileID: 412164}
   - component: {fileID: 3321322}
   - component: {fileID: 2360670}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wheel1-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

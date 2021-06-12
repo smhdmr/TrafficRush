@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 400136}
   - component: {fileID: 3376236}
   - component: {fileID: 2326942}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wheel4-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 413932}
   - component: {fileID: 3313826}
   - component: {fileID: 2309776}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wheel4-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,8 @@ GameObject:
   - component: {fileID: 2305816}
   - component: {fileID: -2791585214091943963}
   - component: {fileID: -5405579507793084804}
-  m_Layer: 0
+  - component: {fileID: -6549848307551289469}
+  m_Layer: 3
   m_Name: Car_4_Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,6 +282,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b6b5c68f88a2f4c893afbd240ed0aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &-6549848307551289469
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140570}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.047246374, y: 0.02008486, z: 0.02206753}
+  m_Center: {x: -0.0003447161, y: 0.0001621684, z: 4.656614e-10}
 --- !u!1 &168118
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,7 +306,7 @@ GameObject:
   - component: {fileID: 420208}
   - component: {fileID: 3364058}
   - component: {fileID: 2378074}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wheel4-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +388,7 @@ GameObject:
   - component: {fileID: 487112}
   - component: {fileID: 3377850}
   - component: {fileID: 2380936}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wheel4-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

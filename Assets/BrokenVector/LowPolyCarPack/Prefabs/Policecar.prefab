@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 457100}
   - component: {fileID: 3314106}
   - component: {fileID: 2336936}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WheelP-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 455130}
   - component: {fileID: 3333860}
   - component: {fileID: 2369410}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WheelP-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 423422}
   - component: {fileID: 3394116}
   - component: {fileID: 2375230}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WheelP-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,8 @@ GameObject:
   - component: {fileID: 2393662}
   - component: {fileID: -5328776490573851301}
   - component: {fileID: 331983988389432248}
-  m_Layer: 0
+  - component: {fileID: -8743244006154144775}
+  m_Layer: 3
   m_Name: Policecar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -363,6 +364,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b6b5c68f88a2f4c893afbd240ed0aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &-8743244006154144775
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134962}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.048301507, y: 0.014184672, z: 0.019492175}
+  m_Center: {x: 0.002698654, y: 0.0011507962, z: 9.313228e-10}
 --- !u!1 &193266
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,7 +388,7 @@ GameObject:
   - component: {fileID: 439626}
   - component: {fileID: 3381250}
   - component: {fileID: 2378534}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WheelP-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

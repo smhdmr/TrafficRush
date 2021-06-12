@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 464864}
   - component: {fileID: 3397576}
   - component: {fileID: 2354928}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WheelT2-6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 479710}
   - component: {fileID: 3315562}
   - component: {fileID: 2308958}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WheelT2-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 454778}
   - component: {fileID: 3305426}
   - component: {fileID: 2353684}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WheelT2-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +257,7 @@ GameObject:
   - component: {fileID: 486056}
   - component: {fileID: 3389686}
   - component: {fileID: 2354994}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Truck 2 Cargo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,7 +338,7 @@ GameObject:
   - component: {fileID: 474254}
   - component: {fileID: 3364172}
   - component: {fileID: 2320976}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WheelT2-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 439330}
   - component: {fileID: 3308594}
   - component: {fileID: 2398288}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WheelT2-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -502,7 +502,7 @@ GameObject:
   - component: {fileID: 479490}
   - component: {fileID: 3395216}
   - component: {fileID: 2330358}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WheelT2-8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -586,7 +586,8 @@ GameObject:
   - component: {fileID: 2378322}
   - component: {fileID: -313297569868240562}
   - component: {fileID: 3339412109669136122}
-  m_Layer: 0
+  - component: {fileID: 13592632842712879}
+  m_Layer: 3
   m_Name: Truck_2_Purple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -695,6 +696,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b6b5c68f88a2f4c893afbd240ed0aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &13592632842712879
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157538}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08039332, y: 0.030644886, z: 0.029360997}
+  m_Center: {x: 0.0026170525, y: -0.00023395056, z: 0}
 --- !u!1 &165590
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,7 +720,7 @@ GameObject:
   - component: {fileID: 448348}
   - component: {fileID: 3308766}
   - component: {fileID: 2360470}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WheelT2-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -788,7 +802,7 @@ GameObject:
   - component: {fileID: 477684}
   - component: {fileID: 3368274}
   - component: {fileID: 2380082}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WheelT2-7
   m_TagString: Untagged
   m_Icon: {fileID: 0}

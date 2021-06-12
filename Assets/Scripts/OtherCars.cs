@@ -24,6 +24,21 @@ public class OtherCars : MonoBehaviour
     private IEnumerator DestroyTimer()
     {
         yield return new WaitForSeconds(Global.otherCarsDestroyTime);
+        CarSpawner.Instance.RemoveFromActiveCars(this.gameObject);
         Destroy(this.gameObject);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            LevelManager.Instance.GameOver();
+        }
+
+        else
+        {
+            CarSpawner.Instance.RemoveFromActiveCars(this.gameObject);
+            Destroy(this.gameObject);
+        }
     }
 }
