@@ -556,8 +556,8 @@ MonoBehaviour:
   - -6
   - 6
   - 18
-  minSpawnTime: 0.1
-  maxSpawnTime: 2
+  minSpawnTime: 1
+  maxSpawnTime: 3
   minSpawnCount: 1
   maxSpawnCount: 2
   spawnOffset: 200
@@ -697,26 +697,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car
       objectReference: {fileID: 0}
-    - target: {fileID: 129146, guid: 9f650378e491fae43bc3f73307b646d7, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 145462, guid: 9f650378e491fae43bc3f73307b646d7, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 148674, guid: 9f650378e491fae43bc3f73307b646d7, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 150224, guid: 9f650378e491fae43bc3f73307b646d7, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 190888, guid: 9f650378e491fae43bc3f73307b646d7, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 455904, guid: 9f650378e491fae43bc3f73307b646d7, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -761,25 +741,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 723799303, guid: 9f650378e491fae43bc3f73307b646d7, type: 3}
-      propertyPath: carDetectionCooldown
+    - target: {fileID: 277360489451537617, guid: 9f650378e491fae43bc3f73307b646d7, type: 3}
+      propertyPath: Loop
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 723799303, guid: 9f650378e491fae43bc3f73307b646d7, type: 3}
-      propertyPath: carDetectionDistance
-      value: 5
+    - target: {fileID: 277360489451537617, guid: 9f650378e491fae43bc3f73307b646d7, type: 3}
+      propertyPath: m_Pitch
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1269368296, guid: 9f650378e491fae43bc3f73307b646d7, type: 3}
-      propertyPath: m_Layer
-      value: 3
+    - target: {fileID: 277360489451537617, guid: 9f650378e491fae43bc3f73307b646d7, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 132c1515ea005404fb6144c976c99ed6, type: 3}
+    - target: {fileID: 277360489451537617, guid: 9f650378e491fae43bc3f73307b646d7, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1424976084, guid: 9f650378e491fae43bc3f73307b646d7, type: 3}
-      propertyPath: m_Layer
-      value: 3
+    - target: {fileID: 277360489451537617, guid: 9f650378e491fae43bc3f73307b646d7, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1677746240, guid: 9f650378e491fae43bc3f73307b646d7, type: 3}
-      propertyPath: m_Layer
-      value: 3
+    - target: {fileID: 4124462814005131101, guid: 9f650378e491fae43bc3f73307b646d7, type: 3}
+      propertyPath: maxPitch
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4124462814005131101, guid: 9f650378e491fae43bc3f73307b646d7, type: 3}
+      propertyPath: minPitch
+      value: 0.65
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f650378e491fae43bc3f73307b646d7, type: 3}

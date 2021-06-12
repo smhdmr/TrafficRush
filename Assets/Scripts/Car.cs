@@ -24,12 +24,18 @@ public class Car : MonoBehaviour
     private bool isDetectionActiveR = true;    
 
     //COMPONENTS
-    private Rigidbody rb;
+    [HideInInspector]
+    public Rigidbody rb;
     private Transform rayPointL, rayPointR;
-        
+
+    //INSTANCE
+    public static Car Instance;
+
 
     void Awake()
     {
+        Instance = this;
+
         //GET NECESSARY GAMEOBJECTS and COMPONENTS
         rb = GetComponent<Rigidbody>();
         rayPointL = transform.GetChild(5);

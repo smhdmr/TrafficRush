@@ -23,17 +23,20 @@ public class LevelManager : MonoBehaviour
     public void FreezeTime()
     {
         Time.timeScale = 0f;
+        EngineSound.Instance.SetEngineSound(false);
     }
 
     public void ResumeTime()
     {
         Time.timeScale = 1f;
+        EngineSound.Instance.SetEngineSound(true);
     }
 
     public void RestartGame()
     {
         CarSpawner.Instance.DestroyActiveCars();
         car.position = Global.carStartPos;
+        Car.Instance.rb.velocity = Vector3.zero;
         road1.position = Global.road1StartPos;
         road2.position = Global.road2StartPos;
         Global.score = 0;
