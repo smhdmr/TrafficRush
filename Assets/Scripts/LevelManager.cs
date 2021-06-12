@@ -51,4 +51,10 @@ public class LevelManager : MonoBehaviour
         FreezeTime();
         UIManager.Instance.SetGameOverMenuVisibility(true);
     }
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+            Application.Quit();
+    }
 }
