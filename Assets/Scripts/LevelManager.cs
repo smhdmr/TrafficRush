@@ -34,6 +34,7 @@ public class LevelManager : MonoBehaviour
     {
         CarSpawner.Instance.DestroyActiveCars();
         car.position = Global.carStartPos;
+        Car.Instance.rb.velocity = Vector3.zero;
         road1.position = Global.road1StartPos;
         road2.position = Global.road2StartPos;
         Global.score = 0;

@@ -556,8 +556,8 @@ MonoBehaviour:
   - -6
   - 6
   - 18
-  minSpawnTime: 0.1
-  maxSpawnTime: 2
+  minSpawnTime: 1
+  maxSpawnTime: 3
   minSpawnCount: 1
   maxSpawnCount: 2
   spawnOffset: 200
